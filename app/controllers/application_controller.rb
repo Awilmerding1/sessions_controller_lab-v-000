@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
   def current_user
   	session[:name] ||= ""
 	end
+	
+	def hello 
+	  if current_user
+	end
 
   
 end
