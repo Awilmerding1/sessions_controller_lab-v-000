@@ -10,7 +10,10 @@ class ApplicationController < ActionController::Base
 	end
 	
 	def hello 
-	  if current_user
+	  if current_user != ""
+	    @user = current_user 
+	  else 
+	    
 	end
 
   
