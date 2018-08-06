@@ -5,10 +5,11 @@ class SessionsController < ApplicationController
   
   def create 
     if params[:name] == nil || ""
+      redirect_to '/sessions/new'
+    else 
     session[:name] = params[:name]
       redirect_to '/'
-    
-  end
+    end
   end 
   
   def destroy
