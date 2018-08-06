@@ -9,12 +9,5 @@ class ApplicationController < ActionController::Base
   	session[:name] ||= ""
 	end
 	
-	def hello 
-	  if current_user != ""
-	    @user = current_user 
-	  else 
-	    
-	end
-
   
 end
