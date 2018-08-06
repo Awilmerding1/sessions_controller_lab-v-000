@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end 
   
   def create 
-    session[:name]
+    session[:name] = 
   end 
   
   def destroy
